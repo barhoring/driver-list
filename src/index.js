@@ -2,6 +2,7 @@ import React, { useReducer, useEffect } from "react";
 import { render } from "react-dom";
 
 import Header from "./Header";
+import DriverList from "./DriverList";
 import actionTypes from "./actionTypes";
 import endpoint from "./endpoint";
 import "./style.css";
@@ -14,11 +15,12 @@ const initialState = {
 
 const fetchReducer = (state, action) => {
   console.log(action);
+  debugger;
   switch (action.type) {
     case actionTypes.LOADING:
       return initialState;
     case actionTypes.RESPONSE_COMPLETE:
-      return { loading: false, error: null, result: action.payload.drivers };
+      return { loading: false, error: null, result: action.payload.response };
     default:
       console.log("Action type not known");
       return state;
@@ -37,13 +39,13 @@ const useFetch = () => {
       .then((response) => {
         dispatch({
           type: actionTypes.RESPONSE_COMPLETE,
-          payload: { response: response },
+          payload: { response },
         });
       })
       .catch((error) => dispatch({ type: actionTypes.ERROR }));
   }, []);
 
-  return [state.loading, state.error, state.response];
+  return [state.loading, state.error, state.result];
 };
 
 const App = () => {
@@ -53,7 +55,9 @@ const App = () => {
   return (
     <div>
       <Header />
-      <main>{loading ? <p>Loading...</p> : <p>disaply drivers</p>} </main>
+      <main>
+        {loading ? <p>Loading...</p> : <DriverList drivers={drivers} />}{" "}
+      </main>
       {error && <p className="error">{error.message}</p>}
     </div>
   );

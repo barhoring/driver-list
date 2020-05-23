@@ -2,11 +2,41 @@
   border: 1px solid green;
 }
 
-.search {
-  background-color: #20b8ea;
+body {
+  background-color: #f1f1f1;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  line-height: 100px;
   color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  display: flex; /* establish flex container */
+  flex-direction: row; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+}
+
+.driver-card {
+  background-color: white;
 }
 
 .error {
   color: red;
+}
+
+.search {
+  background-color: #20b8ea;
+  color: white;
 }
