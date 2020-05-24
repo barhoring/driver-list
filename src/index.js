@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect, useState } from "react";
+import React, { useReducer, useEffect } from "react";
 import { render } from "react-dom";
 
 import Header from "./Header";
@@ -31,7 +31,7 @@ const fetchReducer = (state, action) => {
         loading: false,
         error: null,
         result: state.result,
-        drivers: action.payload.response,
+        drivers: action.payload.drivers,
       };
     default:
       console.log("Action type not known");
@@ -59,19 +59,19 @@ const useFetch = () => {
 
   const search = (prefixName) => {
     prefixName = prefixName.toLowerCase();
-    const newD = state.result.filter((d) => {
-      return d.name.toLowerCase().includes(prefixName);
+    const newDrivers = state.result.filter((driver) => {
+      return driver.name.toLowerCase().includes(prefixName);
     });
-    debugger;
-    dispatch({ type: actionTypes.SEARCH, payload: { response: newD } });
+    dispatch({ type: actionTypes.SEARCH, payload: { drivers: newDrivers } });
   };
 
   return [state.loading, state.error, state.result, state.drivers, search];
 };
 
 const App = () => {
+  // eslint-disable-next-line
   const [loading, error, response, drivers, setDrivers] = useFetch(endpoint);
-  let driversR = drivers || [];
+  let driverList = drivers || [];
 
   console.log("drivers:", drivers);
 
@@ -79,7 +79,7 @@ const App = () => {
     <div>
       <Header setDrivers={setDrivers} />
       <main>
-        {loading ? <p>Loading...</p> : <DriverList drivers={driversR} />}{" "}
+        {loading ? <p>Loading...</p> : <DriverList drivers={driverList} />}{" "}
       </main>
       {error && <p className="error">{error.message}</p>}
     </div>
