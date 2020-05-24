@@ -10,9 +10,9 @@ Implemented search by driver name.
 
 ## Instructions
 
-- `git clone`
+- `git clone https://github.com/barhoring/driver-list.git`
 
-- `cd ...`
+- `cd driver-list`
 
 - `npm install`
 
