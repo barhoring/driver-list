@@ -18,26 +18,36 @@ const DriverCard = ({
         padding: "10px",
         backgroundColor: "white",
         borderRadius: "0.25rem",
-        padding: "5px",
         margin: "10px",
         height: "100%",
       }}
     >
       <div
-        class="card"
+        className="card"
         style={{
           backgroundImage: `url(${profile_image})`,
         }}
       >
-        <div class="footer" style={{}}>
-          <div class="info">
-            <div>{name}</div>
-            <div>Driver rank: {driverRank}</div>
-            <div>Phone: {phone}</div>
-            <div>Email: {email}</div>
+        <div className="footer">
+          <div className="info">
+            <div className="driver-type">
+              <div
+                className={
+                  "icon " +
+                  (driverType.toLowerCase() === "professional"
+                    ? "professional"
+                    : "citizen")
+                }
+              ></div>
+            </div>
+            <div style={{ paddingTop: "20px" }}>
+              <div>{name}</div>
+              <div>Driver rank: {driverRank}</div>
+              <div>Phone: {phone}</div>
+              <div>Email: {email}</div>
+            </div>
           </div>
         </div>
-        <div class="card-blur"></div>
       </div>
     </div>
   );

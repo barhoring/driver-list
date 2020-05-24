@@ -3,7 +3,6 @@ import React from "react";
 import DriverCard from "./DriverCard";
 
 const DriverList = ({ drivers }) => {
-  debugger;
   return (
     <div className="flex-container">
       {drivers.map((d) => (

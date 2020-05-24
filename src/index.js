@@ -15,7 +15,6 @@ const initialState = {
 
 const fetchReducer = (state, action) => {
   console.log(action);
-  debugger;
   switch (action.type) {
     case actionTypes.LOADING:
       return initialState;
