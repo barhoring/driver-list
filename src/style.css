@@ -29,7 +29,30 @@ body {
 }
 
 .driver-card {
+  height: 30rem;
+  width: 20rem;
   background-color: white;
+  color: #999999;
+  border-radius: 0.4rem;
+}
+
+.driver-card img {
+  width: 15rem; /* width of container */
+  height: 15rem; /* height of container */
+  object-fit: cover;
+  /* border: 5px solid black; */
+  /* object-position: 0px 0px; */
+  /* max-height: 200px; */
+  /* width: auto; */
+}
+.driver-details {
+  height: 15rem;
+  background: red;
+  transition: height 0.4s;
+}
+
+.driver-details:hover {
+  height: 200px;
 }
 
 .error {

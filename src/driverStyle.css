@@ -1,0 +1,41 @@
+.card {
+  /* position: absolute; */
+  border-radius: 0.2rem;
+  height: 300px;
+  width: 200px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  /* background-image: url(https://images.unsplash.com/photo-1504575070132-986227df99f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7ecf0d8a55890fdb50eba8d4def9645d); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+}
+
+.card:hover .connection {
+  transform: translateY(0px);
+}
+
+.info {
+  height: 190px;
+  font-family: Inconsolata;
+  padding-left: 2px;
+  transform: translateY(30px);
+  background: white;
+  transition: transform 0.25s;
+}
+
+.card:hover .info {
+  transform: translateY(-40px);
+}

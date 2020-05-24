@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 
 const Driver = ({
   name,
@@ -14,10 +13,29 @@ const Driver = ({
       className="flex-item driver-card"
       style={{
         border: "1px solid blue",
-        background: "pink",
+        fontSize: "1rem",
       }}
     >
-      hsssss
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "17rem",
+          width: "17rem",
+          border: "1px solid pink",
+        }}
+      >
+        <img
+          alt={`driver ${name}`}
+          src={profile_image}
+          style={{ border: "2px solid purple " }}
+        />
+      </div>
+      <div className="driver-details">
+        <div>{name}</div>
+        <div>DriverRank : {driverRank}</div>
+      </div>
     </span>
   );
 };
