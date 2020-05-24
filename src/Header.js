@@ -13,7 +13,6 @@ const Header = ({ setDrivers }) => {
             aria-label="Driver Name"
             onChange={(event) => {
               setDrivers(event.target.value);
-              console.log(event.target.value);
             }}
           />
         </div>

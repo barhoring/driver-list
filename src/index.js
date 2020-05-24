@@ -15,7 +15,6 @@ const initialState = {
 };
 
 const fetchReducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case actionTypes.LOADING:
       return initialState;
@@ -72,8 +71,6 @@ const App = () => {
   // eslint-disable-next-line
   const [loading, error, response, drivers, setDrivers] = useFetch(endpoint);
   let driverList = drivers || [];
-
-  console.log("drivers:", drivers);
 
   return (
     <div>
