@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/driver-list/static/css/main.e178770c.chunk.css",
-    "main.js": "/driver-list/static/js/main.444f1407.chunk.js",
-    "main.js.map": "/driver-list/static/js/main.444f1407.chunk.js.map",
+    "main.js": "/driver-list/static/js/main.118d8515.chunk.js",
+    "main.js.map": "/driver-list/static/js/main.118d8515.chunk.js.map",
     "runtime-main.js": "/driver-list/static/js/runtime-main.7f9813e2.js",
     "runtime-main.js.map": "/driver-list/static/js/runtime-main.7f9813e2.js.map",
     "static/js/2.f5ab906d.chunk.js": "/driver-list/static/js/2.f5ab906d.chunk.js",
     "static/js/2.f5ab906d.chunk.js.map": "/driver-list/static/js/2.f5ab906d.chunk.js.map",
     "index.html": "/driver-list/index.html",
-    "precache-manifest.c1a755ed410fe5e6467acc95a4ffdb37.js": "/driver-list/precache-manifest.c1a755ed410fe5e6467acc95a4ffdb37.js",
+    "precache-manifest.0875eddfad5ade0851a1daf0f047daa2.js": "/driver-list/precache-manifest.0875eddfad5ade0851a1daf0f047daa2.js",
     "service-worker.js": "/driver-list/service-worker.js",
     "static/css/main.e178770c.chunk.css.map": "/driver-list/static/css/main.e178770c.chunk.css.map",
     "static/js/2.f5ab906d.chunk.js.LICENSE.txt": "/driver-list/static/js/2.f5ab906d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.7f9813e2.js",
     "static/js/2.f5ab906d.chunk.js",
     "static/css/main.e178770c.chunk.css",
-    "static/js/main.444f1407.chunk.js"
+    "static/js/main.118d8515.chunk.js"
   ]
 }
