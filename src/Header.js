@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ setDrivers }) => {
   return (
     <div className="container-fluid search">
       <div className="row mb-3 mt-3">
@@ -11,6 +11,10 @@ const Header = () => {
             className="form-control"
             placeholder="Driver Name"
             aria-label="Driver Name"
+            onChange={(event) => {
+              setDrivers(event.target.value);
+              console.log(event.target.value);
+            }}
           />
         </div>
       </div>
