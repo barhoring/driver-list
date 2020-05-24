@@ -1,14 +1,12 @@
-* {
+/* * {
   border: 1px solid green;
-}
+} */
 
 body {
   background-color: #f1f1f1;
 }
 
 .flex-item {
-  background: tomato;
-  padding: 5px;
   width: 100px;
   height: 100px;
   margin: 10px;
@@ -40,10 +38,6 @@ body {
   width: 15rem; /* width of container */
   height: 15rem; /* height of container */
   object-fit: cover;
-  /* border: 5px solid black; */
-  /* object-position: 0px 0px; */
-  /* max-height: 200px; */
-  /* width: auto; */
 }
 .driver-details {
   height: 15rem;
@@ -62,4 +56,5 @@ body {
 .search {
   background-color: #20b8ea;
   color: white;
+  height: auto;
 }

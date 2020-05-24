@@ -3,9 +3,9 @@ import React from "react";
 const Header = ({ setDrivers }) => {
   return (
     <div className="container-fluid search">
-      <div className="row mb-3 mt-3">
-        <h2 className="col-sm-8">Contact List</h2>
-        <div className="col-sm-4">
+      <div className="row">
+        <h2 className="col-sm-8 mb-3 mt-3">Contact List</h2>
+        <div className="col-sm-4 mb-3 mt-3">
           <input
             type="text"
             className="form-control"

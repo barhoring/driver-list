@@ -28,8 +28,8 @@
 .info {
   height: 190px;
   font-family: Inconsolata;
-  padding-left: 2px;
-  transform: translateY(30px);
+  padding-left: 5px;
+  transform: translateY(20px);
   background: white;
   transition: transform 0.25s;
 }
@@ -38,15 +38,15 @@
   transform: translateY(-50px);
 }
 
-.card:hover .connection {
-  transform: translateY(-40px);
+.card:hover .driver-type {
+  transform: translateY(-35px);
 }
 
 .driver-type {
   height: 35px;
   width: 35px;
   display: inline-block;
-  transform: translateY(-30px);
+  transform: translateY(-35px);
   transition: transform 0.25s;
   position: fixed;
   margin-left: 20px;
